@@ -61,7 +61,7 @@ class LRUCache {
         if hashT.count > limit {
             tempTail = tail?.previous
             tempTail?.next = nil
-            //remover tail de hashT
+      
             if let x = tail { hashT[tail!.v] = nil }
             
             tail = tempTail
